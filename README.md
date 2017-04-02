@@ -132,12 +132,12 @@ Sample app for creating Asp.Net MVC 5 authorization using claims principal
   
       private UserSessionModel Authenticate(SignInViewModel vm)
       {
-          if (vm.Email != "email@email.com" || vm.Password != "password") throw new AuthenticationException("Login failed. Incorrect email address or password");
+          if (vm.Email != "test@test.com" || vm.Password != "test") throw new AuthenticationException("Login failed. Incorrect email address or password");
   
           return new UserSessionModel
           {
               UserId = Guid.NewGuid(),
-              DisplayName = "Deepu Madhusoodanan"
+              DisplayName = "test"
           };
       }
       
